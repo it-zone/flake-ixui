@@ -51,7 +51,7 @@ Then set the package explicitly:
 
 ```nix
 {
-  virtualisation.incus.ui.package = inputs.ixui.packages.${pkgs.system}.ixui;
+  virtualisation.incus.ui.package = inputs.ixui.packages.${pkgs.stdenv.hostPlatform.system}.ixui;
 }
 ```
 
